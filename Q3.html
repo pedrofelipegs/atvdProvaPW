@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q3</title>
+</head>
+<body>
+    <script>
+        // utilizaçao da condiçao de seta (arrow), criaçao da variavel calSalario que ira receber o valor, onde foi deixado predefinido o valor da base, a gratificaçao e o ajuste
+    let calSalario = (base = 1200, gratificacao = 0, ajuste = 1.1) => {
+        return `Salário: ${(base * ajuste) + gratificacao}`; // calculo
+      };
+      console.log(calSalario()); // esse console ira fazer o calculo com os valores que ja estao predefinidos
+      console.log(calSalario(1300)); // ira substituir o valor do 1200
+      console.log(calSalario(1400,100,1.2)); // ira substituir os 3 valores em sequencia
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q1</title>
+</head>
+<body>
+    <script>
+    let website = { // criação da variável atraves do let
+        titulo:"Sistema de Avaliação Online", // propiedades
+        url: "https://www.sistemaOnlineAv.com.br",  
+        tags: ["Biologia", "História", "Matemática", "Português"], 
+        disciplinasTecnicas:{ // disciplinas tec que estao dentro dessa propriedade
+            adm: ["Direito do Consumidor", "Marketing"],
+            inf: ["HTML", "PHP","JavaScript"],
+            enf: ["Saúde da Mulher", "Primeiro Socorros"]},
+        escola:function(nome){ // metodo escola + funçao que ira exibir a informaçao sobre o website (nome da escola) em um console 
+            console.log(nome)
+            }
+        }
+        console.log(website.titulo);
+        console.log(website.url);
+        console.log(website.tags[2]);
+        console.log(website.disciplinasTecnicas.adm[1]); // .adm para mostrar a discp que voce quer e o 1 para localizá-la
+        website.escola("EEEP Amélia Figueiredo"); // website, que é a variavel e o metodo do obj
+        // console exibindo titulo, url, tags, discpTec, escola
+</script>
+</body>
+</html>

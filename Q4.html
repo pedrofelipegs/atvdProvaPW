@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q4</title>
+</head>
+<body>
+    <script>
+    let salarios = [1200,1400,1500,1250,1530,1600] // criaçao da variavel salarios + array
+    let tamanho = salarios.length; // criaçao da variavel tamanho para que contenha o comprimento da string
+    let maiorNum = 0;  // criaçao da variavel maiorNum
+    for (let cont = 0; cont < tamanho; cont++){ // condiçao FOR, criaçao do cont = 0, decidir que o cont tem que parar quando ele for menor que TAMANHO, incremento  
+        if (maiorNum < salarios[cont]){
+            maiorNum = salarios[cont]
+        }
+    }
+    console.log(maiorNum) // mostrando o maior numero no console
+    // criaçao do if e incorporando as variaveis maiorNum e salarios
+    // apos isso, elas sao comparadas e entao ver qual é maior e depois atribuir o valor ao maior numero
+</script>
+</body>
+</html>
